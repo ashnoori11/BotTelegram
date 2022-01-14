@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6AA9291-8437-4B8B-9EF8-2F827EB7254B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarhangBot", "FarhangBot\FarhangBot.csproj", "{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4BA82CE-514E-4EAF-AD91-FE8C79A1EF03} = {A6AA9291-8437-4B8B-9EF8-2F827EB7254B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4066A08B-EB1F-4222-A15F-CE2C1EBC9F9D}
+	EndGlobalSection
+EndGlobal

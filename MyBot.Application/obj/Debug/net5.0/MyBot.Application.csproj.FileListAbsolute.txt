@@ -1,0 +1,15 @@
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\MyBot.Application.deps.json
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\MyBot.Application.dll
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\ref\MyBot.Application.dll
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\MyBot.Application.pdb
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\MyBot.Domain.dll
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\bin\Debug\net5.0\MyBot.Domain.pdb
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.csproj.AssemblyReference.cache
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.AssemblyInfoInputs.cache
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.AssemblyInfo.cs
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.csproj.CopyComplete
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.dll
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\ref\MyBot.Application.dll
+C:\Users\Ashkan\source\Repos\MyBot\MyBot.Application\obj\Debug\net5.0\MyBot.Application.pdb
