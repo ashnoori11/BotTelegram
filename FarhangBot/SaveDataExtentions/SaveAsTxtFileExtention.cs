@@ -11,7 +11,9 @@ namespace FarhangBot.SaveDataExtentions
     {
         public static void WriteAsync(string text)
         {
-            string path = @"c:\temp\BotInfo.txt";
+            string rootPath = Path.GetPathRoot(Environment.SystemDirectory);
+            string path = $"{rootPath}{ @"temp\BotInfo.txt"}";
+
             if (!File.Exists(path))
             {
                 // Create a file to write to.
@@ -30,7 +32,8 @@ namespace FarhangBot.SaveDataExtentions
 
         public static void WriteAnswers(string text)
         {
-            string path = @"c:\temp\Answers.txt";
+            string rootPath = Path.GetPathRoot(Environment.SystemDirectory);
+            string path = $"{rootPath}{ @"temp\BotInfo.txt"}";
             if (!File.Exists(path))
             {
                 // Create a file to write to.

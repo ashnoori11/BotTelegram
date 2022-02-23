@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FarhangBot.exe" size="49128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FarhangBot.exe" size="46568">
       <assemblyIdentity name="FarhangBot" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bnu0YBm9tENv1EGGVQsl/QiRHQ3C+FVpap08uYYbz/s=</dsig:DigestValue>
+        <dsig:DigestValue>ltTIviTi3zIBQDBbRErnsEVg6MIxvDYubSyI8Q7yPaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

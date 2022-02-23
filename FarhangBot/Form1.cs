@@ -1,4 +1,5 @@
 ﻿using FarhangBot.SaveDataExtentions;
+using FarhangBot.StringExtentions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,18 +33,32 @@ namespace FarhangBot
         private void btnStart_Click(object sender, EventArgs e)
         {
             Token = txtToken.Text;
-            BotThraed = new Thread(new ThreadStart(RunBot));
-            BotThraed.Start();
-            if (BotThraed.IsAlive || BotThraed.IsBackground)
+            try
             {
-                btnStart.Enabled = false;
-                btnPhoto.Enabled = true;
-                btnSelectFile.Enabled = true;
-                btnSend.Enabled = true;
-                btnSendPhoto.Enabled = true;
-                btnVideo.Enabled = true;
-                btnSendText.Enabled = true;
-                btnSendVideo.Enabled = true;
+                BotThraed = new Thread(new ThreadStart(RunBot));
+                BotThraed.Start();
+                if (BotThraed.IsAlive || BotThraed.IsBackground)
+                {
+                    btnStart.Enabled = false;
+                    btnPhoto.Enabled = true;
+                    btnSelectFile.Enabled = true;
+                    btnSend.Enabled = true;
+                    btnSendPhoto.Enabled = true;
+                    btnVideo.Enabled = true;
+                    btnSendText.Enabled = true;
+                    btnSendVideo.Enabled = true;
+                }
+            }
+            catch
+            {
+                btnStart.Enabled = true;
+                btnPhoto.Enabled = false;
+                btnSelectFile.Enabled = false;
+                btnSend.Enabled = false;
+                btnSendPhoto.Enabled = false;
+                btnVideo.Enabled = false;
+                btnSendText.Enabled = false;
+                btnSendVideo.Enabled = false;
             }
         }
 
@@ -632,8 +647,8 @@ namespace FarhangBot
 
                     dgReport.Invoke(new Action(() =>
                     {
-                        dgReport.Rows.Add(item.Message.Chat.Id, fromWho.Username, text, item.Message.MessageId, item.Message.Date.ConvertMiladiToShamsi());
-                        SaveAsTxtFileExtention.WriteAsync($"(شناسه چت : {item.Message.Chat.Id}) - (نام کاربری : {fromWho.Username}) - ( پاسخ : {text} ) - (شناسه پیام : {item.Message.MessageId}) - (تاریخ : {item.Message.Date.ConvertMiladiToShamsi()})");
+                        dgReport.Rows.Add(item.Message.Chat.Id, fromWho.Username, text.RemoveUniCodes(), item.Message.MessageId, item.Message.Date.ConvertMiladiToShamsi());
+                        SaveAsTxtFileExtention.WriteAsync($"(شناسه چت : {item.Message.Chat.Id}) - (نام کاربری : {fromWho.Username}) - ( پاسخ : {text.RemoveUniCodes()} ) - (شناسه پیام : {item.Message.MessageId}) - (تاریخ : {item.Message.Date.ConvertMiladiToShamsi()})");
                     }));
                 }
             }
@@ -789,6 +804,11 @@ namespace FarhangBot
             {
                 MessageBox.Show("لطفا ابتدا آیدی یا همان شناسه کانال را در جای مربوطه قرار دهید و سپس کلیک کنید .");
             }
+
+        }
+
+        private void txtToken_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -84,7 +84,7 @@ namespace FarhangBot
             this.txtToken.Name = "txtToken";
             this.txtToken.Size = new System.Drawing.Size(456, 20);
             this.txtToken.TabIndex = 0;
-            this.txtToken.Text = "5042402791:AAE9-P6xm41DB70nbrTIo9mPfXi7I7fjgPE";
+            this.txtToken.TextChanged += new System.EventHandler(this.txtToken_TextChanged);
             // 
             // statusStrip1
             // 
@@ -257,7 +257,6 @@ namespace FarhangBot
             this.txtChanel.Name = "txtChanel";
             this.txtChanel.Size = new System.Drawing.Size(366, 20);
             this.txtChanel.TabIndex = 0;
-            this.txtChanel.Text = "@farhangsaadatsupport";
             // 
             // Form1
             // 
