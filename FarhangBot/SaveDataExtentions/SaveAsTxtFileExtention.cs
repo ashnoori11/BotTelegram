@@ -33,7 +33,7 @@ namespace FarhangBot.SaveDataExtentions
         public static void WriteAnswers(string text)
         {
             string rootPath = Path.GetPathRoot(Environment.SystemDirectory);
-            string path = $"{rootPath}{ @"temp\BotInfo.txt"}";
+            string path = $"{rootPath}{ @"temp\Answers.txt"}";
             if (!File.Exists(path))
             {
                 // Create a file to write to.

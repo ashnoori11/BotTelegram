@@ -32,33 +32,40 @@ namespace FarhangBot
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Token = txtToken.Text;
-            try
+            if (!String.IsNullOrWhiteSpace(txtToken.Text))
             {
-                BotThraed = new Thread(new ThreadStart(RunBot));
-                BotThraed.Start();
-                if (BotThraed.IsAlive || BotThraed.IsBackground)
+                Token = txtToken.Text;
+                try
                 {
-                    btnStart.Enabled = false;
-                    btnPhoto.Enabled = true;
-                    btnSelectFile.Enabled = true;
-                    btnSend.Enabled = true;
-                    btnSendPhoto.Enabled = true;
-                    btnVideo.Enabled = true;
-                    btnSendText.Enabled = true;
-                    btnSendVideo.Enabled = true;
+                    BotThraed = new Thread(new ThreadStart(RunBot));
+                    BotThraed.Start();
+                    if (BotThraed.IsAlive || BotThraed.IsBackground)
+                    {
+                        btnStart.Enabled = false;
+                        btnPhoto.Enabled = true;
+                        btnSelectFile.Enabled = true;
+                        btnSend.Enabled = true;
+                        btnSendPhoto.Enabled = true;
+                        btnVideo.Enabled = true;
+                        btnSendText.Enabled = true;
+                        btnSendVideo.Enabled = true;
+                    }
+                }
+                catch
+                {
+                    btnStart.Enabled = true;
+                    btnPhoto.Enabled = false;
+                    btnSelectFile.Enabled = false;
+                    btnSend.Enabled = false;
+                    btnSendPhoto.Enabled = false;
+                    btnVideo.Enabled = false;
+                    btnSendText.Enabled = false;
+                    btnSendVideo.Enabled = false;
                 }
             }
-            catch
+            else
             {
-                btnStart.Enabled = true;
-                btnPhoto.Enabled = false;
-                btnSelectFile.Enabled = false;
-                btnSend.Enabled = false;
-                btnSendPhoto.Enabled = false;
-                btnVideo.Enabled = false;
-                btnSendText.Enabled = false;
-                btnSendVideo.Enabled = false;
+                MessageBox.Show("لطفا ابتدا توکن را وارد نمایید و سپس بعد از آن بر روی استارت کلیک کنید .");
             }
         }
 
